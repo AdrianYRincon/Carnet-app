@@ -19,6 +19,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #fff;
+
 }
 
 
@@ -31,6 +32,16 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   overflow: hidden;
+}
+
+@media (max-width:568px ) {
+  .login {
+    /* width: 80rem;
+    height: 40rem; */
+    width: 78%;
+    height: 58%;
+    
+  }
 }
 
 .unal {
@@ -166,12 +177,12 @@ body {
 
 .error-validation {
   position: absolute;
-  top: 13%;
-  font-size:1.2rem;
+  top: 8%;
+  font-size:1.4rem;
   font-weight: bold;
   background-color: red;
-  padding: .7rem 1rem;
-  color: black; 
+  padding: .7rem .5rem;
+  color: #fff; 
 }
 
 /* validation page */
@@ -179,7 +190,6 @@ body {
 .validation {
   width: 100%;
   height: 100vh;
-  background-color: black;
   background-image: url('./assets/unal.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -187,7 +197,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  position: relative;
+} 
+
 
 .validation-form{
   width: 35%;
@@ -201,7 +213,25 @@ body {
   font-weight: bold;
   padding: 5rem 2rem;
   border-radius: 11px;
+  
 }
+.camera {
+  background-color: #fff;
+  color: #131212;
+  align-self: flex-start;
+  padding: 1rem;
+  border-radius: 9px;
+  background-image: url('./assets/camara.png');
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 5rem;
+}
+
+.camera:hover {
+  cursor: pointer;
+}
+
 
 @media (max-width:950px ) {
   .validation-form{
@@ -218,6 +248,16 @@ body {
   }
   
 }
+
+@media (max-width:490px ) {
+  .validation-form{
+    width: 70%;
+   
+  }
+  
+}
+
+
 
 .validation-form input, .validation-form select {
   display: block;
@@ -259,4 +299,39 @@ body {
 
 .btn-logout:hover {
   border-bottom: 1px solid black;
+}
+
+/* Photo Page */
+
+.page-webcam {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/src/assets/a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-webcam {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  padding: 2rem;
+  background-color: rgba(24, 23, 23, 0.678);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
+}
+
+.box-webcam div{
+  display: flex;
+  gap:1rem;
+}
+
+.webcam {
+  width: 34rem;
+  text-align: center;
 }
