@@ -8,5 +8,5 @@ export const PrivateRoute = ({ children }) => {
   const { logged }  = useContext(AuthContext)
   
   //si logged = true muestra los componente hijos sino navega al login
-  return ( logged ) ? children : <Navigate to='login'/>
+  return ( logged ) ? children : <Navigate to='/login'/>
 }

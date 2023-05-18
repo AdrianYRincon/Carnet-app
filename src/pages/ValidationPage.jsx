@@ -27,13 +27,13 @@ export const ValidationPage = () => {
 
     logout();
 
-    navigate('login',{
+    navigate('/login',{
       replace:true
     });
   }
 
   const onClick = () => {
-    navigate('photo',{
+    navigate('/photo',{
       replace: true
       });
   }
