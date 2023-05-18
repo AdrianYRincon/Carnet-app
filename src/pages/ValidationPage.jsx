@@ -27,7 +27,7 @@ export const ValidationPage = () => {
 
     logout();
 
-    navigate('/login',{
+    navigate('login',{
       replace:true
     });
   }

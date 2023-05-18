@@ -13,7 +13,7 @@ export const AppRouter = () => {
     <>
       <Routes>
         {/* Ruta pública */}
-        <Route path='/login' 
+        <Route path='login' 
           element={
             <PublicRoute>
               <LoginPage/>
@@ -27,7 +27,7 @@ export const AppRouter = () => {
           </PrivateRoute> 
         }/>
 
-        <Route path='/photo' element={ 
+        <Route path='photo' element={ 
           <PrivateRoute>
             <PhotoPage/>
           </PrivateRoute> 
